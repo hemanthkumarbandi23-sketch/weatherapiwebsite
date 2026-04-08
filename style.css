@@ -25,9 +25,9 @@ body{
     height: 600px;
     width: 500px;
     border-color: red;
-   margin-top: 5px;
-   border-width: 2px;
-   border-style: solid;
+    margin-top: 5px;
+    border-width: 2px;
+    border-style: solid;
 }
 #icon{
     height: 300px;
@@ -49,17 +49,31 @@ body{
     align-items: center;
     gap: 10px;                 
 }
-
 #inputcity {
     padding: 8px;
     font-size: 16px;
 }
-
 #searchbtn {
     padding: 8px 12px;
     font-size: 16px;
     cursor: pointer;
     background-color: white;
     color:#67e8f9;
-    
+}
+.result{
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+#resultedcity{
+    font-size: 28px;
+    font-weight: 500;
+}
+#resultedtemp {
+    font-size: 60px;
+    font-weight: bold;
+    margin-top: 10px;
 }

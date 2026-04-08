@@ -1,7 +1,7 @@
 let k = document.getElementById("themeToggle");
 let u = document.getElementById("seeker");
 let flag = 0;
-
+let img=document.getElementById("iconchange");
 k.addEventListener("change", function () {
     if (flag == 0) {
         document.body.style.backgroundImage = "url('background2.jpg')";
@@ -34,8 +34,13 @@ btn.addEventListener("click", () => {
             tempText.innerText = "City not found ❌";
             return;
         }
-
         tempText.innerText = data.current.temp_c + "°C";
+        if(data.current.temp_c<=20)
+      img.src="temp1.jpeg";
+   else if(data.current.temp_c>20 && data.current.temp_c<30)
+      img.src="temp2.jpeg";
+   else
+      img.src="temp3.jpeg";
         city1.innerText = data.location.name;
     })
     .catch(err => {
